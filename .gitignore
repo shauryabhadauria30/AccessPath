@@ -1,22 +1,15 @@
-
 # Python
 __pycache__/
-*.pyc
+*.py[cod]
 venv/
-.venv/
+backend/venv/
+.env
 
-# Node.js
+# Node
 node_modules/
 dist/
-build/
 
-# Environment files
-.env
-.env.*
-
-# Editors
+# Editors and OS
 .vscode/
-
-# Operating system
 .DS_Store
 Thumbs.db
