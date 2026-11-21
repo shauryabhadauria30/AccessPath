@@ -3,7 +3,10 @@ import heapq
 from typing import Dict, List, Tuple, Optional
 
 # Load graph data once at module import
-with open('graph.json', 'r') as f:
+import os
+# Load graph data relative to this file's directory
+GRAPH_PATH = os.path.join(os.path.dirname(__file__), 'graph.json')
+with open(GRAPH_PATH, 'r') as f:
     GRAPH_DATA = json.load(f)
 
 NODES = {node['id']: node for node in GRAPH_DATA.get('nodes', [])}
