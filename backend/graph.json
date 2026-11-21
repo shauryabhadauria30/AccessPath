@@ -1,0 +1,20 @@
+{
+  "nodes": [
+    {"id":"buildA-1","name":"Demo Building A Entrance","type":"buildingEntrance","building":"Building A","floor":"ground"},
+    {"id":"corr1-1","name":"Demo Corridor 1","type":"corridor","building":null,"floor":null},
+    {"id":"room101-1","name":"Demo Room 101","type":"room","building":"Building A","floor":"1st"},
+    {"id":"buildB-1","name":"Demo Building B Entrance","type":"buildingEntrance","building":"Building B","floor":"ground"},
+    {"id":"junction1-1","name":"Demo Junction 1","type":"junction","building":null,"floor":null},
+    {"id":"staircase1-1","name":"Demo Staircase 1","type":"stairs","building":null,"floor":null},
+    {"id":"lift1-1","name":"Demo Lift 1","type":"lift","building":null,"floor":null}
+  ],
+  "edges": [
+    {"id":"edge-1","from":"buildA-1","to":"corr1-1","distance":15.0,"stairs":false,"ramp":true,"lift":false,"stepFreeVerified":true,"status":"active"},
+    {"id":"edge-2","from":"corr1-1","to":"room101-1","distance":20.0,"stairs":false,"ramp":false,"lift":false,"stepFreeVerified":false,"status":"active"},
+    {"id":"edge-3","from":"buildA-1","to":"junction1-1","distance":30.0,"stairs":false,"ramp":true,"lift":false,"stepFreeVerified":true,"status":"active"},
+    {"id":"edge-4","from":"junction1-1","to":"buildB-1","distance":25.0,"stairs":false,"ramp":false,"lift":false,"stepFreeVerified":true,"status":"active"},
+    {"id":"edge-5","from":"corr1-1","to":"staircase1-1","distance":10.0,"stairs":true,"ramp":false,"lift":false,"stepFreeVerified":false,"status":"active"},
+    {"id":"edge-6","from":"staircase1-1","to":"room101-1","distance":12.0,"stairs":true,"ramp":false,"lift":false,"stepFreeVerified":false,"status":"active"},
+    {"id":"edge-7","from":"buildB-1","to":"lift1-1","distance":8.0,"stairs":false,"ramp":false,"lift":true,"stepFreeVerified":true,"status":"active"}
+  ]
+}
